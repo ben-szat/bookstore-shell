@@ -20,7 +20,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* TypeScript type definitions */
+    "typeRoots": ["./node_modules/@types", "./src"], // Add src here
+    "types": ["react", "react-dom"] // Add any custom types you may use
   },
-  "include": ["src"]
+  "include": ["src", "src/declarations.d.ts"]
 }
