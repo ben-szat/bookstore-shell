@@ -11,14 +11,9 @@ export default defineConfig({
       remotes: {
         booklist: "http://localhost:3001/assets/remoteEntry.js", // Load the BookList microfrontend
       },
-      shared: ["react", "react-dom", "@mui/material"],
+      shared: ["react", "react-dom", "@mui/material", "@apollo/client"],
     }),
   ],
-  server: {
-    proxy: {
-      '/assets/remoteEntry.js': 'http://localhost:3001/assets/remoteEntry.js', // Proxy remoteEntry.js for shell to microfrontend
-    }
-  },
   build: {
     target: "esnext",
   },
