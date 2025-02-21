@@ -11,7 +11,7 @@ export default defineConfig({
       remotes: {
         booklist: "http://localhost:3001/assets/remoteEntry.js", // Load the BookList microfrontend
       },
-      shared: ["react", "react-dom", "@mui/material", "@apollo/client"],
+      shared: ["react", "react-dom", "@mui/material", "@mui/icons-material" ,"@apollo/client"],
     }),
   ],
   build: {
